@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "npm run serve",
+    "startdev": "NODE_ENV=development npm run serve",
+    "start": "NODE_ENV=production npm run serve",
     "build": "npm run build-ts && npm run tslint",
     "serve": "node dist/server.js",
     "build-ts": "tsc",
@@ -24,6 +25,7 @@
   "author": "Pierre Mével",
   "license": "MIT",
   "devDependencies": {
+    "@types/dotenv": "^4.0.3",
     "@types/express": "^4.16.0",
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.1.2",
@@ -42,6 +44,7 @@
     }
   },
   "dependencies": {
+    "dotenv": "^6.1.0",
     "express": "^4.16.4"
   }
 }
