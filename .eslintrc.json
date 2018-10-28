@@ -1,0 +1,18 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "comma-dangle": 0,
+    "arrow-body-style": 0,
+    "quotes": ["error", "double"],
+    "arrow-parens": ["error", "always"]
+  },
+  "parserOptions": { "ecmaVersion": 6 },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

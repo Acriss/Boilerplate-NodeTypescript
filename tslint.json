@@ -1,6 +1,6 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint-config-airbnb", "tslint-config-prettier"],
+  "extends": ["tslint-eslint-rules", "tslint-config-prettier"],
   "jsRules": {},
   "rules": {
     "no-var-requires": false,
