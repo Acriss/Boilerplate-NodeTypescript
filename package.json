@@ -24,6 +24,7 @@
   "author": "Pierre Mével",
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.16.0",
     "eslint-plugin-prettier": "^3.0.0",
     "nodemon": "^1.18.5",
     "prettier": "^1.14.3",
@@ -38,5 +39,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
