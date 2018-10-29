@@ -1,12 +1,12 @@
-interface IDatabaseReader {
-  getAll: (table: string) => Array<object>;
-  getById: (table: string, id: number) => object;
+interface IDatabase {
+  getAll: (table: string) => Promise<Array<object>>;
+  getById: (table: string, id: number) => Promise<object>;
+  create: (table: string, newElement: object) => Promise<object>;
+  update: (table: string, changedFields: object, id: number) => Promise<object>;
+  delete: (table: string, id: number) => Promise<any>;
 }
 
-interface IDatabaseWriter {
-  create: (table: string, newElement: object) => object;
-  update: (table: string, changedFields: object, id: number) => object;
-  delete: (table: string, id: number) => string;
-}
+type IDatabaseReader = Pick<IDatabase, "getAll" | "getById">;
+type IDatabaseWriter = Pick<IDatabase, "create" | "update" | "delete">;
 
-export { IDatabaseReader, IDatabaseWriter };
+export { IDatabase, IDatabaseReader, IDatabaseWriter };
