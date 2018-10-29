@@ -35,3 +35,5 @@ export class Database implements IDatabase {
 const DatabaseFactory = (driver: IDatabase): Database => {
   return new Database(driver);
 };
+
+export { DatabaseFactory };
