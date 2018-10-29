@@ -1,6 +1,6 @@
+import { Application } from "express";
 import express from "express";
 import dotenv from "dotenv";
-import session from "express-session";
 import bodyParser from "body-parser";
 import lusca from "lusca";
 
@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === "production") {
   dotenv.config({ path: ".env.development" });
 }
 
-const app = express();
+const app: Application = express();
 
 // Express configuration and middlewares
 app.set("port", process.env.PORT || 3000);
