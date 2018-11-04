@@ -4,3 +4,4 @@ package-lock.json
 .env
 .env.development
 .DS_STORE
+built/*

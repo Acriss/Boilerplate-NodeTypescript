@@ -1,8 +1,8 @@
 import { Application } from "express";
-import express from "express";
-import dotenv from "dotenv";
-import bodyParser from "body-parser";
-import lusca from "lusca";
+import * as express from "express";
+import * as dotenv from "dotenv";
+import * as bodyParser from "body-parser";
+import * as lusca from "lusca";
 
 import routes from "./routes";
 

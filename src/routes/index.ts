@@ -1,4 +1,4 @@
-import express from "express";
+import * as express from "express";
 import { Router } from "express";
 
 import indexRoute from "./indexRoute";
